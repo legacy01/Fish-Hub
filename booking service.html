@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room and Auditorium Booking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header id="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html"><span>Fish</span> Hub</a></h1>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Booking services.html" class="active"> Booking Services</a></li>
+                </ul>
+            </nav>
+            <form action="https://www.php.com" method="post" class="search-bar">
+                <input type="search" name="searchbar" id="search1" placeholder="search all ....">
+                <button value="button">Search</button>
+            </form>
+        </div>
+    </header> <!--End of Navigation Bar-->
+
+    <div class="sub_head">
+        <h1>Room and Auditorium Booking</h1>
+    </div>
+
+    <main>
+        <form class="booking-form">
+            <h2>Book a Room or Auditorium</h2>
+
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="room-type">Select Room or Auditorium</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="">-- Select an Option --</option>
+                    <option value="conference-room">Conference Room</option>
+                    <option value="meeting-room">Meeting Room</option>
+                    <option value="auditorium">Auditorium</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Booking</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Room and Auditorium Booking</p>
+    </footer>
+
+</body>
+
+</html>

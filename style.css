@@ -1,0 +1,528 @@
+/* General Reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*BODY*/
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* NAVBAR / HEADER*/
+#navbar {
+
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004f99;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .container h1 {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #00d9e8ee;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links ul li {
+    display: inline;
+
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.nav-links ul li a.active {
+    text-decoration: underline;
+    color: #00a8e8;
+}
+
+.nav-links ul li a:hover {
+    color: #00a8e8;
+}
+
+#navbar .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navbar .search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+#navbar .search-bar button {
+    background-color: #00a8e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#navbar .search-bar button:hover {
+    background-color: #007ab8;
+}
+
+/* Start Section_1 */
+.section_1 {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to top, #004f99, #0066cc);
+    color: #fff;
+
+}
+
+.section_1 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section_1 .search-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.section_1 .search-item input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    flex-grow: 1;
+    max-width: auto;
+
+}
+
+.section_1 .search-item button {
+    background-color: #00a8e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.section_1 .search-item button:hover {
+    background-color: #007ab8;
+}
+
+.section_1 p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.section_1 .cta-button {
+    padding: 10px 20px;
+    background-color: #00a8e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.section_1 .cta-button:hover {
+    background-color: #007ab8;
+}
+
+.section_1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+    background-color: #004f99;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section_1 img:hover {
+    opacity: 1;
+}
+
+
+/* Features Section */
+.section_2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.fish_group ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.fish_group li {
+    flex: 1 1 calc(33.33% - 1rem);
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.fish_group li:hover {
+    transform: scale(1.05);
+}
+
+.fish_group img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fish_group div {
+    padding: 1rem;
+}
+
+.fish_group h4 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.fish_group div {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+
+    background-color: #004f99;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+
+}
+
+.footer a {
+    color: #00a8e8;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+
+
+@media (max-width: 768px) {
+
+    /* FOR INDEX PAGE */
+    #navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .search-bar {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .search-bar input {
+        flex: 1;
+    }
+
+    .search-bar button {
+        width: auto;
+    }
+
+    .fish_group ul {
+        gap: 1rem;
+    }
+
+    .fish_group li {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    /* For Booking Service */
+    main {
+        padding: 1rem;
+    }
+
+    .booking-form {
+        padding: 1.5rem;
+        box-shadow: none;
+        border-radius: 5px;
+    }
+
+    .booking-form h2 {
+        font-size: 1.25rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+
+    .form-group button {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* For Index Page*/
+    #navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    #navbar .logo {
+        text-align: center;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .logo a {
+        font-size: 1.2rem;
+    }
+
+    .nav-links ul {
+        font-size: 0.9rem;
+    }
+
+    .search-bar {
+        margin-top: 1rem;
+        width: 50%;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        font-size: 0.9rem;
+    }
+
+    .fish_group li {
+        flex: 1 1 100%;
+    }
+
+    /*For Booking Service*/
+    .sub-head {
+        padding: 0.75rem;
+    }
+
+    .sub-head h1 {
+        font-size: 1.5rem;
+    }
+
+    .booking-form {
+        padding: 1rem;
+    }
+
+    .booking-form h2 {
+        font-size: 1rem;
+    }
+
+    .form-group label {
+        font-size: 0.875rem;
+    }
+}
+
+
+
+
+/*ABOUT US PAGE*/
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links ul li {
+    display: inline;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.nav-links ul li a.active {
+    text-decoration: underline;
+}
+
+
+
+
+/*BOOKING SERVICE*/
+
+.sub_head {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.sub_head h1 {
+    padding-top: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: calc(100vh - 100px);
+}
+
+.booking-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.booking-form h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #004f99;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    height: 100px;
+}
+
+.form-group button {
+    background-color: #004f99;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.form-group button:hover {
+    background-color: #007ab8;
+}
